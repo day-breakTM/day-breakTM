@@ -128,7 +128,7 @@ function createSpinningWheel(segments) {
           console.log('The wheel landed on:', landedSegment.name);
   
           // Display color and segment information to the left of the wheel
-          const legendX = wheelRadius + 500; // Adjust the X position based on your layout
+          const legendX = wheelRadius*2 + 500; // Adjust the X position based on your layout
           const legendY = wheelRadius + 10; // Adjust the Y position based on your layout
   
           ctx.fillStyle = '#000000'; // Set the text color to black
