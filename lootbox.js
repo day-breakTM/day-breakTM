@@ -2,7 +2,7 @@
 function createSpinningWheel(segments) {
     const canvas = document.getElementById('spinning-wheel');
     const ctx = canvas.getContext('2d');
-    const wheelRadius = canvas.width / 6;
+    const wheelRadius = canvas.width / 2.5;
     const segmentColors = ['#FF3E4D', '#FF974E', '#FFC94E', '#4EFF5A', '#5AD8FF', '#B07FFF', '#C495B5', '#F98CF2', '#9CF88D', '#238AA6', '#299558', '#5D15B5', '#ECAD5C', '#A226DF'];
   
     // Easing function
@@ -67,7 +67,7 @@ function createSpinningWheel(segments) {
     // Function to spin the wheel and output the landed segment
     function spinWheel() {
       const spinCount = 1; // Number of spins
-      const spinDuration = 1500; // Duration of the spin in milliseconds
+      const spinDuration = 3000; // Duration of the spin in milliseconds
       const spinStart = Date.now();
   
       const weights = segments.map(segment => segment.percentage); // Create an array of segment weights
@@ -151,22 +151,10 @@ function createSpinningWheel(segments) {
   
   // Example usage with segments defined
   const segments = [
-    { name: 'None', percentage: 25 },
-    { name: 'Enhanced Senses', percentage: 10 },
-    { name: 'Enhanced Physicality (Overall)', percentage: 10 },
-    { name: 'Enhanced Physical Trait', percentage: 10 },
-    { name: 'Immense Physicality Trait', percentage: 7 },
-    { name: 'Monstrous Physicality', percentage: 7 },
-    { name: 'Prodigy', percentage: 7 },
-    { name: 'Platinum Tongue', percentage: 9 },
-    { name: 'Win Condition', percentage: 7 },
-    { name: 'Plus Ultra', percentage: 7 },
-    { name: 'Eidetic Memory', percentage: 3 },
-    { name: 'Untraceable', percentage: 7  },
-    { name: 'Aura of Fear (II)', percentage: 5 },
-    { name: 'Custom Trait', percentage: 2 },
-    { name: 'Transcendent Transformation', percentage: 2 },
-    { name: 'Last Act', percentage: 5 },
+    { name: 'Channel', percentage: 10 },
+    { name: 'Category', percentage: 20 },
+    { name: 'Void', percentage: 40 },
+    { name: 'Barrel', percentage: 10}
   ];
   
   // Create the spinning wheel and obtain the spinWheel function
