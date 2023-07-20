@@ -2,8 +2,8 @@
 function createSpinningWheel(segments) {
     const canvas = document.getElementById('spinning-wheel');
     const ctx = canvas.getContext('2d');
-    const wheelRadius = canvas.width / 3;
-    const segmentColors = ['#FF3E4D', '#FF974E', '#FFC94E', '#4EFF5A', '#5AD8FF', '#B07FFF', '#C495B5', '#F98CF2', '#9CF88D', '#238AA6', '#299558'];
+    const wheelRadius = canvas.width / 4.5;
+    const segmentColors = ['#FF3E4D', '#FF974E', '#FFC94E', '#4EFF5A', '#5AD8FF', '#B07FFF', '#C495B5', '#F98CF2', '#9CF88D', '#238AA6', '#299558', `#5D15B5`, `#ECAD5C`,` `#A226DF`];
   
     // Easing function
     function easeOut(t) {
